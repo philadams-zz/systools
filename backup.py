@@ -7,7 +7,7 @@ convenience script to backup various folders to an external hd via rsync
 import subprocess
 
 EXTERNAL_PATH = '/Volumes/Calvin/Backup/current/'
-TO_SYNC = ['/Users/phil/Code', # no trailing slash
+TO_SYNC = ['/Users/phil/Code',  # no trailing slash
            '/Users/phil/Documents',
            '/Users/phil/Movies',
            '/Users/phil/Music',
