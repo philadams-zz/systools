@@ -14,10 +14,10 @@ TO_SYNC = ['/Users/phil/Code', # no trailing slash
            '/Users/phil/Pictures',
            '/Users/phil/Sites',
            '/Users/phil/todo.txt']
-CMD = ['rsync', '-a', '--delete-after', '--exclude=.DS_Store']
+CMD = ['rsync', '-a', '-v', '--delete-after', '--exclude=.DS_Store']
 
 print('syncing folders:')
 for local_dir in TO_SYNC:
-    print('\t%s...' % local_dir)
+    print('\n%s...' % local_dir)
     retcode = subprocess.call(CMD + [local_dir, EXTERNAL_PATH])
 print('sync complete')
